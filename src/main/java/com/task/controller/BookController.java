@@ -33,7 +33,7 @@ public class BookController {
 	    Book savedBook = bookService.addBook(book);
 	    return ResponseEntity.ok(savedBook);
 	}
-	
+	// Get mapping
 	@GetMapping("/getBook/{bookName}")
 	public ResponseEntity<Book> getBookBYName(@PathVariable("bookName")String name){
 	    Book bookByName= bookService.getBookByName(name);
